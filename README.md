@@ -15,6 +15,6 @@ index.htm
 
 physics.htm
 
-The css file is titled mw.css!
+The css file is titled mw.css
 
 
