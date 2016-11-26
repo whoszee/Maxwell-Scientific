@@ -9,24 +9,38 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
+<script type="text/javascript">
+  
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </head>
 <body>
 	<header>
 		<h1>Maxwell Scientific</h1>
 	</header>
 </body>
-<nav>
-	<ul>
-<li><a href="index.htm">Home</a></li>
-<li><a href="astro.htm">Astronomy</a></li>  
-<li><a href="chem.htm">Chemistry</a></li>  
-<li><a href="elect.htm">Electronics</a></li>
-<li><a href="eng.htm">Engineering</a></li>
-<li><a href="physics.htm">Physics</a></li>
-	</ul>
-</nav>
+
 <main>
 	
+	<ul class="mainlist">
+		<li class="mainbutton"><a href="astro.htm"><p class="mainbuttontext">Astronomy Products</p></a></li>
+		<li class="mainbutton"><a href="chem.htm"><p class="mainbuttontext">Chemistry Supplies</p></a></li>
+		<li class="mainbutton"><a href="elect.htm"><p class="mainbuttontext">Electronic Kits</p></a></li>
+		<li class="mainbutton"><a href="eng.htm"><p class="mainbuttontext">Engineering Products</p></a></li>
+		<li class="mainbutton"><a href="physics.htm"><p class="mainbuttontext">Physics Kits</p></a></li>
+	</ul>
+
+
+
+
 </main>
 <footer>
 Copyright &#xA9; 2016 Maxwell Scientific<br />

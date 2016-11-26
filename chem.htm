@@ -9,26 +9,40 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
+<script type="text/javascript">
+  
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </head>
 <body>
 	<header>
-		<h1>Maxwell Scientific Chemistry</h1>
-		<p>Maxwell Scientific sets the standard for chemistry supplies. Choose from one of our 40 chemistry kits, developed especially for Maxwell Scientific by the Chemistry department at Princeton University. All kits have been safety-tested. Chemicals are enlosed in protected bottles, using Maxwell Scientific's patented spillproof system.</p>
+		<h1>Chemistry Kits and Supplies</h1>
+		
 	</header>
 </body>
 <nav>
-	<ul>
+	<ul class="topnav" id="myTopnav">
 <li><a href="index.htm">Home</a></li>
 <li><a href="astro.htm">Astronomy</a></li>  
 <li><a href="chem.htm">Chemistry</a></li>  
 <li><a href="elect.htm">Electronics</a></li>
 <li><a href="eng.htm">Engineering</a></li>
 <li><a href="physics.htm">Physics</a></li>
+<li class="icon" ><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
 	</ul>
 </nav>
 <main>
+	<p>Maxwell Scientific sets the standard for chemistry supplies. Choose from one of our 40 chemistry kits, developed especially for Maxwell Scientific by the Chemistry department at Princeton University. All kits have been safety-tested. Chemicals are enlosed in protected bottles, using Maxwell Scientific's patented spillproof system.</p>
 	<dl>
-		<dt>Featured Chemistry Products</dt>
+		<h2>Featured Chemistry Products</h2>
 		<dd>Laboratory Magnetic Stirrer: Electronic speed-controlled stirrer stirs up to 2 liters of water at 60 - 2,500 RPM. Designed for hours of continuous use with little speed deviation or heat build-up. Price $144.95. Stock Number: LMS01-101 </dd>
 		<dd>Laboratory Hot Plate: Heat beakers up to 700 degrees F in 25 minutes within an accuracy of 30 
 degrees F. The hot plate is made of cast aluminum for even heat distribution. Adjustable 
@@ -39,19 +53,21 @@ thermostatic control. Price $119.95. Stock Number: LHP1-700 </dd>
 		<dd>Lab Kit Refill: Refill kit for the Chemistry 2000 set. Price $39.95. Stock Number: SM4-411 </dd>
 		<dd>Enzyme Kit: Examine the basic function and structure of biological enzymes and enzyme reactions. Includes book of suggested experiments. Price $119.95. Stock Number: EZ01-941 </dd>	
 		<dd>Water Test Kit: Perform four interesting water pollution experiments with this water testing kit. Price $59.95. Stock Number: WK24-811 </dd>
+		</dl>
 
-		<dt>Comments From Our Chemistry Customers</dt>
-		<dd>"My 7th grade class greatly enjoyed working with your Solid Waste Recycling kit. Thank you for this fun and educational product." 
-			T. Moore. Chicago, IL </dd>
-		<dd>
+		<ul class="commentsmain">
+		<h2>Comments From Our Chemistry Customers</h2>
+		<li class="commentssub">"My 7th grade class greatly enjoyed working with your Solid Waste Recycling kit. Thank you for this fun and educational product." 
+			T. Moore. Chicago, IL </li>
+		<li class="commentssub">
 			"I greatly appreciate your high-quality science kits. The Chemistry 2000 kit in particular, is excellent."
 			G. Dawes. Denver, CO
-		</dd>
-		<dd>
+		</li>
+		<li class="commentssub">
 			"Thank you for you great chemistry products. You've made my chemistry class one of the most popular at our high school."
 			D. Black. Tacoma, WA 
-		</dd>
-	</dl>
+		</li>
+		</ul>
 </main>
 <footer>
 Copyright &#xA9; 2016 Maxwell Scientific<br />
